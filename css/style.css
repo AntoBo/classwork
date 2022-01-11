@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("./fonts/Gilroy-Regular.woff2") format("woff2"),
+    url("./fonts/Gilroy-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("./fonts/Gilroy-Semibold.woff2") format("woff2"),
+    url("./fonts/Gilroy-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Variables */
+:root {
+  /* text colors */
+  --main-text-color: rgba(255, 255, 255, 0.8);
+
+  /*bg colors*/
+  --main-bg-color: #191919;
+
+  /*fonts*/
+  --main-font: Gilroy, sans-serif;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  font-family: var(--main-font);
+}
+
+/*
+покажи команды из эммета
+как в тогге настроить сохранение по смене фокуса
+*/
