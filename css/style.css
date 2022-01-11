@@ -1,15 +1,15 @@
 @font-face {
   font-family: "Gilroy";
-  src: url("./fonts/Gilroy-Regular.woff2") format("woff2"),
-    url("./fonts/Gilroy-Regular.woff") format("woff");
+  src: url("../fonts/Gilroy-Regular.woff2") format("woff2"),
+    url("../fonts/Gilroy-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Gilroy";
-  src: url("./fonts/Gilroy-Semibold.woff2") format("woff2"),
-    url("./fonts/Gilroy-Semibold.woff") format("woff");
+  src: url("../fonts/Gilroy-Semibold.woff2") format("woff2"),
+    url("../fonts/Gilroy-Semibold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -19,21 +19,179 @@
 :root {
   /* text colors */
   --main-text-color: rgba(255, 255, 255, 0.8);
+  --title-text-color: #e7e7e7;
+  --btn-text-color: rgba(255, 255, 255, 0.9);
+  --accent-text-color: #df3d3a;
+  --qoute-text-color: rgba(255, 255, 255, 0.4);
+  --footer-text-color: rgba(255, 255, 255, 0.3);
 
   /*bg colors*/
   --main-bg-color: #191919;
+  --btn-bg-color: #df3d3a;
 
   /*fonts*/
   --main-font: Gilroy, sans-serif;
 }
 
-body {
-  background-color: var(--main-bg-color);
+html {
+  scroll-behavior: smooth;
+}
+
+/* Utilites */
+a {
   color: var(--main-text-color);
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  box-sizing: border-box;
   font-family: var(--main-font);
+  font-size: 20px;
+  line-height: 1.45;
+  color: var(--main-text-color);
+  letter-spacing: 0.02em;
+
+  background-color: var(--main-bg-color);
+}
+
+.title {
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 1.2;
+  color: var(--title-text-color);
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.25;
+  color: var(--title-text-color);
+}
+
+.btn {
+  width: 400px;
+  height: 68px;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--btn-text-color);
+
+  background-color: var(--btn-bg-color);
+
+  border: none;
+  cursor: pointer;
+}
+
+/* Header */
+
+.nav {
+  font-size: 16px;
+  line-height: 1.19;
+}
+.nav-link {
+  color: currentColor;
+}
+
+/* Hero */
+
+.hero-title {
+  color: var(--title-text-color);
+  font-weight: 600;
+  font-size: 74px;
+  line-height: 100%;
+
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.hero-descr {
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+/* Story */
+
+.story-author {
+  color: var(--qoute-text-color);
+  font-size: 16px;
+}
+
+/* Reviews */
+.reviews-subtitle {
+  color: var(--accent-text-color);
+}
+
+.reviews-pagin {
+  font-size: 28px;
+  line-height: 1.25;
+  color: var(--accent-text-color);
+  opacity: 0.2;
+}
+.reviews-pagin.active {
+  opacity: 1;
+}
+
+/*Store*/
+
+.store-link {
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--main-text-color);
+}
+
+.store-price {
+  font-size: 54px;
+  line-height: 1.25;
+  text-transform: uppercase;
+
+  color: var(--accent-text-color);
+}
+
+/* Feedback */
+
+.btn.submit {
+  width: 510px;
+  background-color: transparent;
+  border: 1px solid var(--btn-bg-color);
+}
+.privacy-text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #e9edfa;
+}
+.privacy-link {
+  color: currentColor;
+  text-decoration: underline;
+}
+/* Footer */
+
+.footer {
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--footer-text-color);
+}
+
+.footer-link {
+  color: currentColor;
+}
+
+.footer-tel {
+  color: var(--main-text-color);
+  line-height: 1.19;
 }
 
 /*
 покажи команды из эммета
-как в тогге настроить сохранение по смене фокуса
 */

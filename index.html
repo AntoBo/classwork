@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body class="page">
-    <header>
-      <a href="#"
+    <header class="header">
+      <a class="header-link" href=""
         ><img
           src="./images/Logo/logo.svg"
           alt="Логотип Bose"
@@ -17,20 +17,32 @@
           height="16"
         />
       </a>
-      <ul>
-        <li><a href="">Характеристики</a></li>
-        <li><a href="">История</a></li>
-        <li><a href="">Отзывы</a></li>
-        <li><a href="">Оплата и доставка</a></li>
-      </ul>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="#design">Характеристики</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#story">История</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#reviews">Отзывы</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#store">Оплата и доставка</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
       <!-- Hero -->
-      <section class="section">
-        <p>Наушники с шумоподавлением, которые способны на многое</p>
-        <p>До 20 часов воспроизведения</p>
-        <h1>Наушники Bose NC 700</h1>
-        <button type="button">Заказать</button
+      <section class="hero section">
+        <p class="hero-descr">
+          Наушники с шумоподавлением, которые способны на многое
+        </p>
+        <p class="hero-descr">До 20 часов воспроизведения</p>
+        <h1 class="hero-title">Наушники Bose NC 700</h1>
+        <button class="hero btn" type="button">Заказать</button
         ><img
           src="./images/hero/bose-nc-700.jpg"
           alt="Наушники Bose NC 700"
@@ -39,11 +51,11 @@
         />
       </section>
       <!-- Design -->
-      <section class="section">
-        <h2>Премиальный дизайн и комфорт</h2>
+      <section class="design section" id="design">
+        <h2 class="">Премиальный дизайн и комфорт</h2>
         <ul>
           <li>
-            <h3>11 уровней шумоподавления</h3>
+            <h3 class="subtitle">11 уровней шумоподавления</h3>
             <p>
               С новыми наушниками Bose Noise Cancelling Headphone 700 можно
               плавно увеличить или уменьшить уровень шумоподавления. Вас слышно
@@ -51,7 +63,7 @@
             </p>
           </li>
           <li>
-            <h3>Комфорт на максимум</h3>
+            <h3 class="subtitle">Комфорт на максимум</h3>
             <p>
               Стильная, легкая дужка из нержавеющей стали с мягкими,
               расположенными под углом чашками наушников для комфортной посадки.
@@ -62,9 +74,9 @@
         </ul>
       </section>
 
-      <!-- Features -->
-      <section class="section">
-        <h2>способны на многое</h2>
+      <!-- advantages -->
+      <section class="advantages section">
+        <h2 class="title">способны на многое</h2>
         <ul>
           <li>Возможность принимать звонки</li>
           <li>Насыщенное и мощное звучание</li>
@@ -75,12 +87,12 @@
         </ul>
       </section>
 
-      <!-- Silence -->
-      <section class="section">
-        <h2>роскошь тишины</h2>
+      <!-- features -->
+      <section class="features section">
+        <h2 class="title">роскошь тишины</h2>
         <ul>
           <li>
-            <h3>Максимальное наслаждение</h3>
+            <h3 class="subtitle">Максимальное наслаждение</h3>
             <p>
               Для того чтобы создать комфортную атмосферу — поднимайте уровень
               за уровнем от "прозрачного" режима до максимального блокирования
@@ -89,7 +101,7 @@
             </p>
           </li>
           <li>
-            <h3>Хрустальный звук</h3>
+            <h3 class="subtitle">Хрустальный звук</h3>
             <p>
               Система динамиков и фирменный активный эквалайзер способны
               обеспечить качественный и мощный звук на любом уровне громкости.
@@ -101,9 +113,9 @@
       </section>
 
       <!-- Technology -->
-      <section class="section">
-        <h2>Bose AR</h2>
-        <h3>Фирменная технология</h3>
+      <section class="technology section">
+        <h2 class="title">Bose AR</h2>
+        <h3 class="subtitle">Фирменная технология</h3>
         <p>
           Bose AR — это уникальная аудиоплатформа дополненной реальности, что
           открывает перед вами новые грани звучания. Она позволяет вам
@@ -112,18 +124,18 @@
         </p>
       </section>
       <!-- Warranty -->
-      <section class="section">
-        <h2>Гарантии</h2>
+      <section class="warranty section">
+        <h2 class="title">Гарантии</h2>
         <ul>
           <li>
-            <h3>Гарантия возврата денег в течение 90 дней</h3>
+            <h3 class="subtitle">Гарантия возврата денег в течение 90 дней</h3>
             <p>
               Если вы не удовлетворены продуктом на 100% вы можете вернуть его
               обратно и получить полный возврат денег
             </p>
           </li>
           <li>
-            <h3>1 год гарантии</h3>
+            <h3 class="subtitle">1 год гарантии</h3>
             <p>
               Вне зависимости от страны вашего проживания, если ваши наушники
               сломались, мы вышлем вам новые
@@ -133,8 +145,8 @@
       </section>
 
       <!-- Story -->
-      <section class="section">
-        <h2>история создания бренда</h2>
+      <section class="story section" id="story">
+        <h2 class="title">история создания бренда</h2>
         <p>
           История Bose Corporation началась с разочарования. В 1956 году
           аспирант Массачусетского технологического института Амар Боуз (Amar
@@ -157,38 +169,39 @@
           width="290"
           height="355"
         />
-        <blockquote>
+        <blockquote class="subtitle">
           Никогда не переставайте мечтать. Всегда мечтайте о лучшем, и думайте о
           том, как этого достичь.
         </blockquote>
+        <p class="story-author">Основатель компании Амар Боуз</p>
       </section>
 
       <!-- Reviews -->
-      <section class="section">
-        <video src="#"></video>
-        <h2>обзоры</h2>
-        <h3>Bose Сorporation</h3>
+      <section class="reviews section" id="reviews">
+        <video src=""></video>
+        <h2 class="title">обзоры</h2>
+        <h3 class="reviews-subtitle subtitle">Bose Сorporation</h3>
         <p>
           Critically acclaimed for their powerful noise cancelling, astonishing
           sound, and unrivaled voice pickup, Bose Noise Cancelling Headphones
           700 help turn any space into the perfect place to listen to music, get
           work done, or just shut out the world for a few moments and relax.
         </p>
-        <ul>
-          <li>01</li>
-          <li>02</li>
-          <li>03</li>
-          <li>04</li>
+        <ul class="list">
+          <li class="reviews-pagin active">01</li>
+          <li class="reviews-pagin">- 02</li>
+          <li class="reviews-pagin">- 03</li>
+          <li class="reviews-pagin">- 04</li>
         </ul>
       </section>
 
       <!-- FAQ -->
-      <section class="section">
-        <h2>FAQ</h2>
+      <section class="faq section" id="faq">
+        <h2 class="title">FAQ</h2>
         <ul>
           <li>
             <details>
-              <summary>
+              <summary class="summary subtitle">
                 Как выполнить сопряжение с мобильным устройством?
               </summary>
               <p>
@@ -207,7 +220,7 @@
           </li>
           <li>
             <details>
-              <summary>
+              <summary class="summary subtitle">
                 Каков диапазон беспроводной связи у Bose NC 700?
               </summary>
               <p>
@@ -226,7 +239,9 @@
           </li>
           <li>
             <details>
-              <summary>Как сложить наушники Bose NC 700 для хранения?</summary>
+              <summary class="summary subtitle">
+                Как сложить наушники Bose NC 700 для хранения?
+              </summary>
               <p>
                 Во-первых, убедитесь, что ваши наушники включены одним нажатием
                 верхней кнопки на задней стороне правого наушника. Затем нажмите
@@ -243,7 +258,9 @@
           </li>
           <li>
             <details>
-              <summary>Работает ли гарантия на международном уровне?</summary>
+              <summary class="summary subtitle">
+                Работает ли гарантия на международном уровне?
+              </summary>
               <p>
                 Во-первых, убедитесь, что ваши наушники включены одним нажатием
                 верхней кнопки на задней стороне правого наушника. Затем нажмите
@@ -262,37 +279,46 @@
       </section>
 
       <!-- Store -->
-      <section class="section">
-        <h2>bose nc 700</h2>
-        <div>
+      <section class="store section" id="store">
+        <h2 class="title">bose nc 700</h2>
+        <div class="store-wrapper">
           <input type="radio" name="colors" checked />
           <input type="radio" name="colors" />
         </div>
-        <img
-          src="./images/store/black.jpg"
-          alt="наушники bose nc 700 черные"
-          width="700"
-          height="664"
-        />
-        <img
-          src="./images/store/white.jpg"
-          alt="наушники bose nc 700 белые"
-          width="700"
-          height="664"
-        />
-        <ul>
-          <li><a href="">Наличие в магазинах</a></li>
-          <li><a href="">Характеристики</a></li>
-          <li><a href="">Способы оплаты и доставки</a></li>
+
+        <ul class="store-list list">
+          <li class="store-item">
+            <a class="store-link" href="">Наличие в магазинах</a>
+          </li>
+          <li class="store-item">
+            <a class="store-link" href="">Характеристики</a>
+          </li>
+          <li class="store-item">
+            <a class="store-link" href="">Способы оплаты и доставки</a>
+          </li>
         </ul>
-        <b>14 999 UAH</b>
-        <button type="button">Заказать</button>
+        <b class="store-price">14 999 UAH</b>
+        <button class="btn" type="button">Заказать</button>
+        <div class="store-thumb">
+          <img
+            src="./images/store/black.jpg"
+            alt="наушники bose nc 700 черные"
+            width="700"
+            height="664"
+          />
+          <img
+            src="./images/store/white.jpg"
+            alt="наушники bose nc 700 белые"
+            width="700"
+            height="664"
+          />
+        </div>
       </section>
 
       <!-- Feedback -->
-      <section class="section">
-        <h2>обратная связь</h2>
-        <h3>Мы поможем подобрать вам подходящие наушники</h3>
+      <section class="feedback section">
+        <h2 class="title">обратная связь</h2>
+        <h3 class="subtitle">Мы поможем подобрать вам подходящие наушники</h3>
         <input type="text" placeholder="Ваше имя" />
         <input type="text" placeholder="Ваш e-mail" />
         <textarea
@@ -301,20 +327,33 @@
           rows="10"
         ></textarea>
         <input type="checkbox" />
-        <span>I agree to the <a href="#">privacy policy</a></span>
-        <button type="submit">Отправить</button>
+        <span class="privacy-text"
+          >I agree to the
+          <a class="privacy-link" href="">privacy policy</a></span
+        >
+        <button class="btn submit" type="submit">Отправить</button>
       </section>
     </main>
-    <footer>
-      <ul>
-        <li><a href="">Характеристики</a></li>
-        <li><a href="">История</a></li>
-        <li><a href="">Отзывы</a></li>
-        <li><a href="">Оплата и доставка</a></li>
-        <li><a href="">Адреса магазинов</a></li>
-        <li><a href="">FAQ</a></li>
+    <footer class="footer">
+      <ul class="footer-list">
+        <li class="footer-item">
+          <a class="footer-link" href="#design">Характеристики</a>
+        </li>
+        <li class="footer-item">
+          <a class="footer-link" href="#story">История</a>
+        </li>
+        <li class="footer-item">
+          <a class="footer-link" href="#reviews">Отзывы</a>
+        </li>
+        <li class="footer-item">
+          <a class="footer-link" href="#store">Оплата и доставка</a>
+        </li>
+        <li class="footer-item">
+          <a class="footer-link" href="">Адреса магазинов</a>
+        </li>
+        <li class="footer-item"><a class="footer-link" href="#faq">FAQ</a></li>
       </ul>
-      <a href="tel:88001111111">8 (800) 111-11-11</a>
+      <a class="footer-tel" href="tel:88001111111">8 (800) 111-11-11</a>
     </footer>
   </body>
 </html>
